@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="lab0.Variant7Test" tests="21" skipped="0" failures="0" errors="0" timestamp="2022-09-08T16:14:49" hostname="DESKTOP-PHDPGCK" time="0.036">
+  <properties/>
+  <testcase name="inputIntegersToArrEx[0]([I@56928307, [I@3899782c)" classname="lab0.Variant7Test" time="0.01"/>
+  <testcase name="inputIntegersToArrEx[1]([I@764faa6, [I@4c1f22f3)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="inputIntegersToBoolEx[0](1, 2, 3, true)" classname="lab0.Variant7Test" time="0.001"/>
+  <testcase name="inputIntegersToBoolEx[1](2, 1, 3, false)" classname="lab0.Variant7Test" time="0.001"/>
+  <testcase name="inputIntegersToBoolEx[2](11, 44, 99, true)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="inputIntegersToCaseEx[0](1, 1, 1)" classname="lab0.Variant7Test" time="0.001"/>
+  <testcase name="inputIntegersToCaseEx[1](4, 1, 1000)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="inputIntegersToCaseEx[2](5, 1, 100)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="inputIntegersToForEx[0](1, 3, 2)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="inputIntegersToForEx[1](1, 44, 43)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="inputIntegersToForEx[2](-10, 10, 20)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="inputIntegersToIfEx[0](1, 2, 2)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="inputIntegersToIfEx[1](2, 1, 1)" classname="lab0.Variant7Test" time="0.001"/>
+  <testcase name="inputIntegersToIfEx[2](22, 44, 2)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="inputIntegersToIntEx[0](56, [I@29526c05)" classname="lab0.Variant7Test" time="0.001"/>
+  <testcase name="inputIntegersToIntEx[1](10, [I@7fb95505)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="inputIntegersToIntEx[2](22, [I@2bd08376)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="inputIntegersToMatrixEx[0]([[I@3d3e5463, 3, 3, 2, [I@64a40280)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="inputIntegersToWhileEx[0](4, 3)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="inputIntegersToWhileEx[1](16, 5)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="inputIntegersToWhileEx[2](100, 11)" classname="lab0.Variant7Test" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
