@@ -40,9 +40,11 @@ public class Variant7 {
     {
         assert a < b : "A should be less than be";
         int res = 0;
-        for(int i = 0; i < b-a; i++)
+        int count = 1;
+        for(int i = 1; i < b+1; i++)
         {
-            res++;
+            res += count;
+            count++;
         }
         return res;
     }
@@ -54,7 +56,6 @@ public class Variant7 {
         int i = 0;
         while(true)
         {
-            k = 0;
             i++;
             k = i*i;
             if(k > n)
