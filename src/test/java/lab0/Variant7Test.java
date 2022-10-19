@@ -20,7 +20,7 @@ public class Variant7Test
         return new Object[][] { { 56, new int[]{11, 30} }, {10, new int[]{1, 0}}, {22, new int[]{4, 4}} };
     }
 
-    @Test(dataProvider = "NegativeintegerProvider")
+    @Test(dataProvider = "NegativeintegerProvider", expectedExceptions = AssertionError.class)
     public void NegativeInputIntegersToIntEx(int p1, int[] p3) { assertEquals(new Variant7().intTask(p1),p3);}
     @DataProvider
     public Object[][] NegativeintegerProvider()
@@ -41,7 +41,7 @@ public class Variant7Test
         return new Object[][] { { 1, 2, 3, true}, {2, 1, 3, false}, {11,44,99, true} };
     }
 
-    @Test(dataProvider = "NegativeBooleanProvider")
+    @Test(dataProvider = "NegativeBooleanProvider", expectedExceptions = AssertionError.class)
     public void NegativeInputIntegersToBoolEx(int a, int b, int c, boolean res)
     {
         assertEquals(new Variant7().boolTask(a,b,c), res);
@@ -65,7 +65,7 @@ public class Variant7Test
         return new Object[][] {{1, 2, 2}, {2, 1, 1}, {22, 44, 2}};
     }
 
-    @Test(dataProvider = "NegativeIfProvider")
+    @Test(dataProvider = "NegativeIfProvider", expectedExceptions = AssertionError.class)
     public void NegativeInputIntegersToIfEx(int a, int b, int res)
     {
         assertEquals(new Variant7().ifTask(a,b), res);
@@ -90,7 +90,7 @@ public class Variant7Test
         return new Object[][] {{1, 3, 6}, {1, 5, 15}, {1, 10, 55}};
     }
 
-    @Test(dataProvider = "NegativeForProvider")
+    @Test(dataProvider = "NegativeForProvider", expectedExceptions = AssertionError.class)
     public void NegativeInputIntegersToForEx(int a, int b, int res)
     {
         assertEquals(new Variant7().forTask(a,b), res);
@@ -116,7 +116,7 @@ public class Variant7Test
         return new Object[][] { {4, 3}, {16,5}, {100,11} };
     }
 
-    @Test(dataProvider = "NegativeWhileProvider")
+    @Test(dataProvider = "NegativeWhileProvider", expectedExceptions = AssertionError.class)
     public void NegativeInputIntegersToWhileEx(int n, int k)
     {
         assertEquals(new Variant7().whileTask(n), k);
@@ -140,7 +140,7 @@ public class Variant7Test
         return new Object[][] {{new int[]{4,3,2,1}, new int[]{1,2,3,4}}, {new int[]{1,2,3}, new int[]{3,2,1}} };
     }
 
-    @Test(dataProvider = "NegativeArrayProvider")
+    @Test(dataProvider = "NegativeArrayProvider", expectedExceptions = AssertionError.class)
     public void NegativeInputIntegersToArrEx(int[] arr, int[] res)
     {
         assertEquals(new Variant7().arrayTask(arr), res);
@@ -166,7 +166,7 @@ public class Variant7Test
         return new Object[][] {{1,1,1}, {4,1,1000}, {5,1,100}};
     }
 
-    @Test(dataProvider = "NegativeCaseProvider")
+    @Test(dataProvider = "NegativeCaseProvider", expectedExceptions = AssertionError.class)
     public void NegativeInputIntegersToCaseEx(int choice, double count, double res)
     {
         assertEquals(new Variant7().caseTask(choice,count), res);
@@ -190,7 +190,7 @@ public class Variant7Test
         return new Object[][] { {new int[][]{{1,1,1},{2,2,2},{3,3,3}},3,3,2,new int[]{3,3,3}} };
     }
 
-    @Test(dataProvider = "NegativeMatrixProvider")
+    @Test(dataProvider = "NegativeMatrixProvider", expectedExceptions = AssertionError.class)
     public void NegativeInputIntegersToMatrixEx(int[][] matrix, int m, int n, int k, int[] arr)
     {
         assertEquals(new Variant7().matrixTask(matrix, m, n, k), arr);

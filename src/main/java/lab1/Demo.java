@@ -11,5 +11,6 @@ public class Demo {
         DeviceBuilder builder = new DeviceBuilder();
         director.constructGamingPC(builder);
         Device gamingPC = builder.getResult();
+        System.out.print("Program have done the build PC");
     }
 }
