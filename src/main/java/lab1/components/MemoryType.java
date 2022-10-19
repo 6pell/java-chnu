@@ -1,6 +1,24 @@
 package lab1.components;
 
+/**
+ * The enum Memory type.
+ */
 public enum MemoryType
 {
-    DDR, DDR2, DDR3, DDR4
+    /**
+     * Ddr memory type.
+     */
+    DDR,
+    /**
+     * Ddr 2 memory type.
+     */
+    DDR2,
+    /**
+     * Ddr 3 memory type.
+     */
+    DDR3,
+    /**
+     * Ddr 4 memory type.
+     */
+    DDR4
 };

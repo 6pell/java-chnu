@@ -2,7 +2,6 @@ package lab0;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import org.testng.internal.collections.Pair;
 
 import static org.testng.Assert.assertEquals;
 

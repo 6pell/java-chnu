@@ -3,8 +3,16 @@ package lab1.director;
 import lab1.components.*;
 import lab1.builders.*;
 
+/**
+ * The type Director.
+ */
 public class Director {
 
+    /**
+     * Construct gaming pc.
+     *
+     * @param builder the builder
+     */
     public void constructGamingPC(Builder builder)
     {
         builder.setDeviceName("PC");
@@ -14,6 +22,12 @@ public class Director {
         builder.setDeviceRAM(new RAM("Kingston",16,2400));
         builder.setDeviceMemoryType(MemoryType.DDR4);
     }
+
+    /**
+     * Construct work pc.
+     *
+     * @param builder the builder
+     */
     public void constructWorkPC(Builder builder)
     {
         builder.setDeviceName("PC");

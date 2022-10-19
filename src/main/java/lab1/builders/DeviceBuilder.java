@@ -3,6 +3,9 @@ package lab1.builders;
 import lab1.devices.Device;
 import lab1.components.*;
 
+/**
+ * The type Device builder.
+ */
 public class DeviceBuilder implements Builder{
     private String name;
     private RAM ram;
@@ -41,6 +44,11 @@ public class DeviceBuilder implements Builder{
         this.hardDrive = hardDrive;
     }
 
+    /**
+     * Gets result.
+     *
+     * @return the result
+     */
     public Device getResult()
     {
         return new Device(name, ram, memoryType, cpu, gpu, hardDrive);
