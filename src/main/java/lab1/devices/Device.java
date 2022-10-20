@@ -7,31 +7,39 @@ import java.util.Objects;
 /**
  * The type Device.
  */
-public class Device {
-    private final String name;
-    private final RAM ram;
-    private final MemoryType memoryType;
-    private final CPU cpu;
-    private final GPU gpu;
-    private final HardDrive hardDrive;
+abstract public class Device {
+    /**
+     * The Ram.
+     */
+    protected final RAM ram;
+    /**
+     * The Memory type.
+     */
+    protected final MemoryType memoryType;
+    /**
+     * The Cpu.
+     */
+    protected final CPU cpu;
+    /**
+     * The Gpu.
+     */
+    protected final GPU gpu;
+    /**
+     * The Hard drive.
+     */
+    protected final HardDrive hardDrive;
 
     /**
      * Instantiates a new Device.
      *
-     * @param name       the name
-     * @param ram        the ram
-     * @param memoryType the memory type
-     * @param cpu        the cpu
-     * @param gpu        the gpu
-     * @param hardDrive  the hard drive
+     * @param bd the bd
      */
-    public Device(String name, RAM ram, MemoryType memoryType, CPU cpu, GPU gpu, HardDrive hardDrive) {
-        this.name = name;
-        this.ram = ram;
-        this.memoryType = memoryType;
-        this.cpu = cpu;
-        this.gpu = gpu;
-        this.hardDrive = hardDrive;
+    public Device(DeviceBuilder bd) {
+        this.ram = bd.ram;
+        this.memoryType = bd.memoryType;
+        this.cpu = bd.cpu;
+        this.gpu = bd.gpu;
+        this.hardDrive = bd.hardDrive;
     }
 
     @Override
@@ -39,33 +47,23 @@ public class Device {
         if (this == o) return true;
         if (!(o instanceof Device)) return false;
         Device device = (Device) o;
-        return name.equals(device.name) && ram.equals(device.ram) && memoryType == device.memoryType && cpu.equals(device.cpu) && gpu.equals(device.gpu) && hardDrive.equals(device.hardDrive);
+        return ram.equals(device.ram) && memoryType == device.memoryType && cpu.equals(device.cpu) && gpu.equals(device.gpu) && hardDrive.equals(device.hardDrive);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, ram, memoryType, cpu, gpu, hardDrive);
+        return Objects.hash( ram, memoryType, cpu, gpu, hardDrive);
     }
 
     @Override
     public String toString() {
         return "Device{" +
-                "name='" + name + '\'' +
-                ", ram=" + ram +
+                "ram=" + ram +
                 ", memoryType=" + memoryType +
                 ", cpu=" + cpu +
                 ", gpu=" + gpu +
                 ", hardDrive=" + hardDrive +
                 '}';
-    }
-
-    /**
-     * Gets name.
-     *
-     * @return the name
-     */
-    public String getName() {
-        return name;
     }
 
     /**
@@ -111,5 +109,88 @@ public class Device {
      */
     public HardDrive getHardDrive() {
         return hardDrive;
+    }
+
+    /**
+     * The type Device builder.
+     */
+    static abstract class DeviceBuilder
+    {
+
+        protected RAM ram;
+        protected MemoryType memoryType;
+        protected CPU cpu;
+        protected GPU gpu;
+        protected HardDrive hardDrive;
+
+        /**
+         * Instantiates a new Device builder.
+         */
+        DeviceBuilder()
+        {
+            super();
+        }
+
+        /**
+         * Sets ram.
+         *
+         * @param ram the ram
+         * @return the ram
+         */
+        public DeviceBuilder setRam(RAM ram) {
+            this.ram = ram;
+            return this;
+        }
+
+        /**
+         * Sets memory type.
+         *
+         * @param memoryType the memory type
+         * @return the memory type
+         */
+        public DeviceBuilder setMemoryType(MemoryType memoryType) {
+            this.memoryType = memoryType;
+            return this;
+        }
+
+        /**
+         * Sets cpu.
+         *
+         * @param cpu the cpu
+         * @return the cpu
+         */
+        public DeviceBuilder setCpu(CPU cpu) {
+            this.cpu = cpu;
+            return this;
+        }
+
+        /**
+         * Sets gpu.
+         *
+         * @param gpu the gpu
+         * @return the gpu
+         */
+        public DeviceBuilder setGpu(GPU gpu) {
+            this.gpu = gpu;
+            return this;
+        }
+
+        /**
+         * Sets hard drive.
+         *
+         * @param hardDrive the hard drive
+         * @return the hard drive
+         */
+        public DeviceBuilder setHardDrive(HardDrive hardDrive) {
+            this.hardDrive = hardDrive;
+            return this;
+        }
+
+        /**
+         * Build device.
+         *
+         * @return the device
+         */
+        abstract public Device build();
     }
 }

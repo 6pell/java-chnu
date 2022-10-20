@@ -20,5 +20,13 @@ public enum MemoryType
     /**
      * Ddr 4 memory type.
      */
-    DDR4
+    DDR4,
+    /**
+     * Ddr 5 memory type.
+     */
+    DDR5,
+    /**
+     * Ddr 6 memory type.
+     */
+    DDR6
 };
