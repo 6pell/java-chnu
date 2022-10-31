@@ -1,5 +1,6 @@
 package lab2;
 
+import lab2.Serialize.SerializeToJSON;
 import lab2.components.*;
 import lab2.devices.PC;
 import lab2.devices.PlayStation;
@@ -27,5 +28,7 @@ public class Demo {
         playStation5.setHardDrive(new HardDrive("",0,5000,5));
         PlayStation ps5 = playStation5.build();
         System.out.printf(ps5.toString());
+        /*SerializeToJSON asd = new SerializeToJSON();
+        asd.objToFile(pc,"test");*/
     }
 }
