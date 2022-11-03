@@ -14,8 +14,8 @@ public class Demo {
         pcBuilder.setMemoryType(MemoryType.DDR4);
         pcBuilder.setHardDrive(new HardDrive("Kingston",2.5,5000,5));
 
-        PC pc = (PC) pcBuilder.build();
-        System.out.println(pc);
+        Device pc = pcBuilder.build();
+        System.out.println(pc.toString());
 
         PlayStation.PSBuilder playStation5 = new PlayStation.PSBuilder();
         playStation5.setType(PlayStation.PlayStationType.PS5);
@@ -24,7 +24,7 @@ public class Demo {
         playStation5.setRam(new RAM("",16,3666));
         playStation5.setMemoryType(MemoryType.DDR6);
         playStation5.setHardDrive(new HardDrive("",0,5000,5));
-        PlayStation ps5 = playStation5.build();
+        Device ps5 = playStation5.build();
         System.out.printf(ps5.toString());
     }
 }

@@ -1,5 +1,6 @@
 package lab1.devices;
 
+import com.fasterxml.jackson.annotation.JsonUnwrapped;
 import lab1.components.*;
 
 import java.util.Objects;
@@ -11,22 +12,27 @@ abstract public class Device {
     /**
      * The Ram.
      */
+    @JsonUnwrapped(prefix="ram.")
     protected final RAM ram;
     /**
      * The Memory type.
      */
+
     protected final MemoryType memoryType;
     /**
      * The Cpu.
      */
+    @JsonUnwrapped
     protected final CPU cpu;
     /**
      * The Gpu.
      */
+    @JsonUnwrapped
     protected final GPU gpu;
     /**
      * The Hard drive.
      */
+    @JsonUnwrapped
     protected final HardDrive hardDrive;
 
     /**
@@ -126,10 +132,7 @@ abstract public class Device {
         /**
          * Instantiates a new Device builder.
          */
-        DeviceBuilder()
-        {
-            super();
-        }
+        DeviceBuilder() {};
 
         /**
          * Sets ram.

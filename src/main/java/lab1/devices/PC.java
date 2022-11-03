@@ -98,13 +98,6 @@ final public class PC extends Device {
             return this;
         }
 
-        /**
-         * Instantiates a new Pc builder.
-         */
-        public PCBuilder()
-        {
-            super();
-        }
 
         @Override
         public Device build() {

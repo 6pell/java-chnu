@@ -1,5 +1,7 @@
 package lab1.devices;
 
+import com.fasterxml.jackson.annotation.JsonUnwrapped;
+
 import java.util.Objects;
 
 
@@ -14,6 +16,7 @@ final public class PlayStation extends Device {
     {
         PS1, PS2, PS3, PS4, PS5, None
     }
+    @JsonUnwrapped
     private PlayStationType type;
 
     /**
