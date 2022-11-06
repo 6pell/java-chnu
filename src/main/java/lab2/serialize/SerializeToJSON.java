@@ -20,7 +20,6 @@ public class SerializeToJSON<T> implements Serialize<T> {
     {
         ObjectMapper mapper = new ObjectMapper();
         List<T> res = mapper.readValue(new File(fileName), new TypeReference<List<T>>(){});
-        System.out.println(res);
         return res;
     }
 }

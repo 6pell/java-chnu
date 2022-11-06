@@ -12,7 +12,7 @@ abstract public class Device {
     /**
      * The Ram.
      */
-    @JsonUnwrapped(prefix="ram.")
+
     protected final RAM ram;
     /**
      * The Memory type.
@@ -22,17 +22,14 @@ abstract public class Device {
     /**
      * The Cpu.
      */
-    @JsonUnwrapped
     protected final CPU cpu;
     /**
      * The Gpu.
      */
-    @JsonUnwrapped
     protected final GPU gpu;
     /**
      * The Hard drive.
      */
-    @JsonUnwrapped
     protected final HardDrive hardDrive;
 
     /**
