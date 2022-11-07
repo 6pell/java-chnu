@@ -22,13 +22,19 @@ public class Demo {
         myList.add(bogdan);
 
         SerializeToJSON serializerJSON = new SerializeToJSON();
+        SerializeToXml serializerToXml = new SerializeToXml();
+        SerializeToTxt serializerToTxt = new SerializeToTxt();
+
+
+        System.out.println("JSON:");
         serializerJSON.writeToFile(myList,"test123.json");
         System.out.println(serializerJSON.readFromFile("test123.json"));
-        SerializeToXml serializerToXml = new SerializeToXml();
+
+        System.out.println("XML:");
         serializerToXml.writeToFile(myList,"test1234.xml");
-        serializerToXml.readFromFile("test1234.xml");
         System.out.println(serializerToXml.readFromFile("test1234.xml"));
-        SerializeToTxt serializerToTxt = new SerializeToTxt();
+
+        System.out.println("TXT:");
         serializerToTxt.writeToFile(myList,"test1235.txt");
         System.out.println(serializerToTxt.readFromFile("test1235.txt"));
     }

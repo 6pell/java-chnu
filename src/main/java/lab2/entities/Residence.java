@@ -13,6 +13,8 @@ public class Residence {
         this.address = address;
     }
 
+    public Residence(){}
+
     public String getCountry() {
         return country;
     }
