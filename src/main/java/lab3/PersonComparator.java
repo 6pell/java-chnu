@@ -1,14 +1,19 @@
 package lab3;
 
+import java.util.Comparator;
 import java.util.Objects;
-
-public class Person implements Comparable<Person>{
+public class PersonComparator implements Comparator<PersonComparator>
+{
     public String firstName;
     public String secondName;
     public int age;
     public Residence residence;
 
-    public Person(String firstName, String secondName, int age, Residence residence) {
+    public PersonComparator() {
+
+    }
+
+    public PersonComparator(String firstName, String secondName, int age, Residence residence) {
         this.firstName = firstName;
         this.secondName = secondName;
         this.age = age;
@@ -47,6 +52,12 @@ public class Person implements Comparable<Person>{
         this.residence = residence;
     }
 
+
+    @Override
+    public int compare(PersonComparator o1, PersonComparator o2) {
+        return o1.age - o2.age;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -70,8 +81,4 @@ public class Person implements Comparable<Person>{
                 '}';
     }
 
-    @Override
-    public int compareTo(Person obj) {
-        return this.age - obj.age;
-    }
 }
