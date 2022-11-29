@@ -1,5 +1,5 @@
 # java-chnu
-lab0 DONE
-lab1 DONE
-lab2 DONE
-lab3 TODO Tests
+lab0 DONE<br />
+lab1 DONE<br />
+lab2 DONE<br />
+lab3 DONE<br />
