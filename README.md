@@ -1,2 +1,5 @@
 # java-chnu
-TODO lab0 negative tests
+lab0 DONE
+lab1 DONE
+lab2 DONE
+lab3 TODO Tests
