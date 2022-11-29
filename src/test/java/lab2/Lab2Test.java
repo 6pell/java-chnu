@@ -18,6 +18,7 @@ import java.util.List;
 import java.util.Objects;
 
 public class Lab2Test {
+
     @Test(dataProvider = "serializeToJSONTest")
     public void serializeProviderTest(String fileName, Serialize<Person> serializer, List<Person> objs) throws IOException, ClassNotFoundException {
         serializer.writeToFile(objs, fileName);

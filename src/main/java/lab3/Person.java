@@ -1,12 +1,14 @@
 package lab3;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class Person implements Comparable<Person>{
-    public String firstName;
-    public String secondName;
-    public int age;
-    public Residence residence;
+    private String firstName;
+    private String secondName;
+    private int age;
+    private Residence residence;
 
     public Person(String firstName, String secondName, int age, Residence residence) {
         this.firstName = firstName;
@@ -73,5 +75,41 @@ public class Person implements Comparable<Person>{
     @Override
     public int compareTo(Person obj) {
         return this.age - obj.age;
+    }
+    public static List<Person> getAgeMoreThan18(List<Person> list)
+    {
+        List<Person> res = new ArrayList<>();
+        for(int i = 0; i < list.size(); i++)
+        {
+            if(list.get(i).age >= 18)
+            {
+                res.add(list.get(i));
+            }
+        }
+        return res;
+    }
+    public static List<Person> searchByFirstName(List<Person> list, String firstName)
+    {
+        List<Person> res = new ArrayList<>();
+        for(int i = 0; i < list.size(); i++)
+        {
+            if(list.get(i).firstName == firstName)
+            {
+                res.add(list.get(i));
+            }
+        }
+        return res;
+    }
+    public static List<Person> searchBySecondName(List<Person> list, String secondName)
+    {
+        List<Person> res = new ArrayList<>();
+        for(int i = 0; i < list.size(); i++)
+        {
+            if(list.get(i).secondName == secondName)
+            {
+                res.add(list.get(i));
+            }
+        }
+        return res;
     }
 }

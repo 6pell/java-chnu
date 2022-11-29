@@ -60,4 +60,5 @@ public class Residence {
                 ", address='" + address + '\'' +
                 '}';
     }
+
 }
