@@ -51,7 +51,6 @@ public class Variant7Test
         return new Object[][] { { 1, 2, 3, false}, {2, 1, 3, true}, {11,44,99, false} };
     }
 
-
     //If7. Даны два числа. Вывести порядковый номер меньшего из них.
     @Test(dataProvider = "ifProvider")
     public void inputIntegersToIfEx(int a, int b, int res)
