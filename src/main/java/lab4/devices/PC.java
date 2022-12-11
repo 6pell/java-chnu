@@ -79,7 +79,7 @@ final public class PC extends Device {
         {
             Validator validator = Validation.buildDefaultValidatorFactory().getValidator();
             Set<ConstraintViolation<PCBuilder>> constraintViolations = validator.validate(this);
-            if(constraintViolations.size() > 0) {
+            if(!constraintViolations.isEmpty()) {
                 String errors = constraintViolations.stream().map(constraintViolation -> {
                     String fieldName = constraintViolation.getPropertyPath().toString().toUpperCase();
                     String message = constraintViolation.getMessage();

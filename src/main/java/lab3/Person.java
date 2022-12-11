@@ -76,40 +76,4 @@ public class Person implements Comparable<Person>{
     public int compareTo(Person obj) {
         return this.age - obj.age;
     }
-    public static List<Person> getAgeMoreThan18(List<Person> list)
-    {
-        List<Person> res = new ArrayList<>();
-        for(int i = 0; i < list.size(); i++)
-        {
-            if(list.get(i).age >= 18)
-            {
-                res.add(list.get(i));
-            }
-        }
-        return res;
-    }
-    public static List<Person> searchByFirstName(List<Person> list, String firstName)
-    {
-        List<Person> res = new ArrayList<>();
-        for(int i = 0; i < list.size(); i++)
-        {
-            if(list.get(i).firstName == firstName)
-            {
-                res.add(list.get(i));
-            }
-        }
-        return res;
-    }
-    public static List<Person> searchBySecondName(List<Person> list, String secondName)
-    {
-        List<Person> res = new ArrayList<>();
-        for(int i = 0; i < list.size(); i++)
-        {
-            if(list.get(i).secondName == secondName)
-            {
-                res.add(list.get(i));
-            }
-        }
-        return res;
-    }
 }

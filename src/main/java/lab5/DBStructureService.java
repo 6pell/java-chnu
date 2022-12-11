@@ -43,7 +43,7 @@ public class DBStructureService {
             {
                     """
                         CREATE TABLE devices.cpu (
-                          id BIGINT NOT NULL,
+                          id BIGINT NOT NULL AUTO_INCREMENT,
                           name varchar(100) NOT NULL,
                           cores integer NOT NULL,
                           frequency float NOT NULL,
@@ -52,7 +52,7 @@ public class DBStructureService {
                     """,
                     """
                         CREATE TABLE devices.gpu (
-                          id BIGINT NOT NULL,
+                          id BIGINT NOT NULL AUTO_INCREMENT,
                           name varchar(100) NOT NULL,
                           frequency integer NOT NULL,
                           memorySize integer NOT NULL,
@@ -62,7 +62,7 @@ public class DBStructureService {
                     """,
                     """
                         CREATE TABLE devices.hardDrive (
-                          id BIGINT NOT NULL,
+                          id BIGINT NOT NULL AUTO_INCREMENT,
                           name varchar(100) NOT NULL,
                           formFactor float NOT NULL,
                           trasferRate integer NOT NULL,
@@ -72,14 +72,14 @@ public class DBStructureService {
                     """,
                     """
                         CREATE TABLE devices.memoryType (
-                          id BIGINT NOT NULL,
+                          id BIGINT NOT NULL AUTO_INCREMENT,
                           type varchar(100) NOT NULL,
                           CONSTRAINT PK_MEMORYTYPE PRIMARY KEY (id)
                         )
                     """,
                     """
                        CREATE TABLE devices.ram (
-                         id BIGINT NOT NULL,
+                         id BIGINT NOT NULL AUTO_INCREMENT,
                          id_memoryType BIGINT,
                          name varchar(100) NOT NULL,
                          memorySize integer NOT NULL,
@@ -90,7 +90,7 @@ public class DBStructureService {
                     """,
                     """
                         CREATE TABLE devices.device (
-                          id BIGINT NOT NULL,
+                          id BIGINT NOT NULL AUTO_INCREMENT,
                           id_cpu BIGINT,
                           id_gpu BIGINT,
                           id_hardDrive BIGINT,
@@ -104,7 +104,7 @@ public class DBStructureService {
                     """,
                     """
                       CREATE TABLE devices.pc (
-                        id BIGINT NOT NULL,
+                        id BIGINT NOT NULL AUTO_INCREMENT,
                         id_device BIGINT,
                         mouseName varchar(100) NOT NULL,
                         keyboardName varchar(100) NOT NULL,
@@ -114,7 +114,7 @@ public class DBStructureService {
                     """,
                     """
                         CREATE TABLE devices.playStation (
-                          id BIGINT NOT NULL,
+                          id BIGINT NOT NULL AUTO_INCREMENT,
                           id_device BIGINT,
                           version varchar(100) NOT NULL,
                           CONSTRAINT PK_PLAYSTATION PRIMARY KEY (id),

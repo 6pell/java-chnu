@@ -97,39 +97,4 @@ public class Lab3Test {
         list1.sort(new ChainComparator(comparators));
         assertEquals(list1,res1);
     }
-
-    @Test
-    public void getAgeMoreThan18Provider()
-    {
-        List<Person>list1 = new ArrayList<>();
-        List<Person>res1 = new ArrayList<>();
-        list1.add(obj13);
-        list1.add(obj14);
-        list1.add(obj15);
-        res1.add(obj14);
-        res1.add(obj15);
-        assertEquals(Person.getAgeMoreThan18(list1), res1);
-    }
-    @Test
-    public void getByFirstNameProvider()
-    {
-        List<Person>list1 = new ArrayList<>();
-        List<Person>res1 = new ArrayList<>();
-        list1.add(obj13);
-        list1.add(obj14);
-        list1.add(obj15);
-        res1.add(obj14);
-        assertEquals(Person.searchByFirstName(list1, "Oleg"), res1);
-    }
-    @Test
-    public void getBySecondNameProvider()
-    {
-        List<Person>list1 = new ArrayList<>();
-        List<Person>res1 = new ArrayList<>();
-        list1.add(obj13);
-        list1.add(obj14);
-        list1.add(obj15);
-        res1.add(obj14);
-        assertEquals(Person.searchBySecondName(list1, "Oleksik"), res1);
-    }
 }

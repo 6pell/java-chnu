@@ -85,7 +85,7 @@ public class Variant7Test
     @DataProvider
     public Object[][] forProvider()
     {
-        return new Object[][] {{1, 3, 6}, {1, 5, 15}, {1, 10, 55}};
+        return new Object[][] {{10, 13, 46}, {1, 5, 15}, {1, 10, 55}};
     }
 
     @Test(dataProvider = "NegativeForProvider", expectedExceptions = AssertionError.class)
@@ -111,7 +111,7 @@ public class Variant7Test
     @DataProvider
     public Object[][] whileProvider()
     {
-        return new Object[][] { {4, 3}, {16,5}, {100,11} };
+        return new Object[][] { {4, 3}, {16,5}, {100,11}, {3,2} };
     }
 
     @Test(dataProvider = "NegativeWhileProvider", expectedExceptions = AssertionError.class)
@@ -161,7 +161,7 @@ public class Variant7Test
     @DataProvider
     public Object[][] caseProvider()
     {
-        return new Object[][] {{1,1,1}, {4,1,1000}, {5,1,100}};
+        return new Object[][] {{1,1,1}, {4,1,1000}, {5,1,100}, {5,0.5,50}};
     }
 
     @Test(dataProvider = "NegativeCaseProvider", expectedExceptions = AssertionError.class)

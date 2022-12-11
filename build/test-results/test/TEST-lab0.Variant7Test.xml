@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="lab0.Variant7Test" tests="44" skipped="0" failures="0" errors="0" timestamp="2022-12-11T09:06:55" hostname="DESKTOP-PHDPGCK" time="0.046">
+  <properties/>
+  <testcase name="NegativeInputIntegersToArrEx[0]([I@1750fbeb, [I@5b247367)" classname="lab0.Variant7Test" time="0.004"/>
+  <testcase name="NegativeInputIntegersToArrEx[1]([I@247310d0, [I@1033576a)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="NegativeInputIntegersToBoolEx[0](1, 2, 3, false)" classname="lab0.Variant7Test" time="0.005"/>
+  <testcase name="NegativeInputIntegersToBoolEx[1](2, 1, 3, true)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="NegativeInputIntegersToBoolEx[2](11, 44, 99, false)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="NegativeInputIntegersToCaseEx[0](1, 1, 0)" classname="lab0.Variant7Test" time="0.001"/>
+  <testcase name="NegativeInputIntegersToCaseEx[1](4, 1, 4000)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="NegativeInputIntegersToCaseEx[2](5, 1, 10)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="NegativeInputIntegersToForEx[0](1, 3, 7)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="NegativeInputIntegersToForEx[1](1, 5, 16)" classname="lab0.Variant7Test" time="0.001"/>
+  <testcase name="NegativeInputIntegersToForEx[2](1, 10, 56)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="NegativeInputIntegersToIfEx[0](1, 2, 1)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="NegativeInputIntegersToIfEx[1](2, 1, 2)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="NegativeInputIntegersToIfEx[2](22, 44, 1)" classname="lab0.Variant7Test" time="0.001"/>
+  <testcase name="NegativeInputIntegersToIntEx[0](56, [I@65987993)" classname="lab0.Variant7Test" time="0.001"/>
+  <testcase name="NegativeInputIntegersToIntEx[1](10, [I@4d1bf319)" classname="lab0.Variant7Test" time="0.001"/>
+  <testcase name="NegativeInputIntegersToIntEx[2](22, [I@1a245833)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="NegativeInputIntegersToMatrixEx[0]([[I@5965d37, 3, 3, 2, [I@7a5ceedd)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="NegativeInputIntegersToWhileEx[0](4, 4)" classname="lab0.Variant7Test" time="0.001"/>
+  <testcase name="NegativeInputIntegersToWhileEx[1](16, 4)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="NegativeInputIntegersToWhileEx[2](100, 10)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="inputIntegersToArrEx[0]([I@3de8f619, [I@2ab4bc72)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="inputIntegersToArrEx[1]([I@eadd4fb, [I@740fb309)" classname="lab0.Variant7Test" time="0.001"/>
+  <testcase name="inputIntegersToBoolEx[0](1, 2, 3, true)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="inputIntegersToBoolEx[1](2, 1, 3, false)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="inputIntegersToBoolEx[2](11, 44, 99, true)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="inputIntegersToCaseEx[0](1, 1, 1)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="inputIntegersToCaseEx[1](4, 1, 1000)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="inputIntegersToCaseEx[2](5, 1, 100)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="inputIntegersToCaseEx[3](5, 0.5, 50)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="inputIntegersToForEx[0](10, 13, 46)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="inputIntegersToForEx[1](1, 5, 15)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="inputIntegersToForEx[2](1, 10, 55)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="inputIntegersToIfEx[0](1, 2, 2)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="inputIntegersToIfEx[1](2, 1, 1)" classname="lab0.Variant7Test" time="0.001"/>
+  <testcase name="inputIntegersToIfEx[2](22, 44, 2)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="inputIntegersToIntEx[0](56, [I@338fc1d8)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="inputIntegersToIntEx[1](10, [I@48e1f6c7)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="inputIntegersToIntEx[2](22, [I@1807e3f6)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="inputIntegersToMatrixEx[0]([[I@f1da57d, 3, 3, 2, [I@194fad1)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="inputIntegersToWhileEx[0](4, 3)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="inputIntegersToWhileEx[1](16, 5)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="inputIntegersToWhileEx[2](100, 11)" classname="lab0.Variant7Test" time="0.0"/>
+  <testcase name="inputIntegersToWhileEx[3](3, 2)" classname="lab0.Variant7Test" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -10,7 +10,7 @@ public class Demo {
         PC.PCBuilder pcBuilder = new PC.PCBuilder();
         pcBuilder.setKeyboard("Razer BlackWidow Chroma V2");
         pcBuilder.setMouse("Logitech G PRO Wireless");
-        pcBuilder.setCpu(new CPU("Ryzen 5 3600", 6, 4.2));
+        pcBuilder.setCpu(new CPU("Ryzen 5 3600", 1, 4.2));
         pcBuilder.setGpu(new GPU("MSI 1060",8000,256,2));
         pcBuilder.setRam(new RAM("Hyperx",16,2400));
         pcBuilder.setMemoryType(MemoryType.DDR4);

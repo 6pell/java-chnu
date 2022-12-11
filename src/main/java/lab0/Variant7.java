@@ -19,11 +19,7 @@ public class Variant7 {
 
     public boolean boolTask(int a, int b, int c)
     {
-        if(a < b && b < c)
-        {
-            return true;
-        }
-        return false;
+        return a < b && b < c;
     }
 
     public int ifTask(int a, int b)
@@ -40,11 +36,9 @@ public class Variant7 {
     {
         assert a < b : "A should be less than be";
         int res = 0;
-        int count = 1;
-        for(int i = 1; i < b+1; i++)
+        for(int i = a; i < b+1; i++)
         {
-            res += count;
-            count++;
+            res += i;
         }
         return res;
     }
@@ -70,10 +64,8 @@ public class Variant7 {
     public int[] arrayTask(int[] a)
     {
         int[] b = new int[a.length];
-        int j = a.length;
         for (int i = 0; i < a.length; i++) {
-            b[j - 1] = a[i];
-            j = j - 1;
+            b[a.length - i - 1] = a[i];
         }
         return b;
     }
@@ -100,9 +92,9 @@ public class Variant7 {
     public int[] matrixTask(int[][] matrix, int m, int n, int k)
     {
         List<Integer> res = new ArrayList<>();
-        for(int i = 0; i < m; i++)
+        for(int i = 0; i < matrix.length; i++)
         {
-            for(int j = 0; j < n; j++)
+            for(int j = 0; j < matrix[i].length; j++)
             {
                 if(i == k)
                 {
